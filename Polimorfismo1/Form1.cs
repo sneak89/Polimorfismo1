@@ -24,12 +24,20 @@ namespace Polimorfismo1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double b = double.Parse(textBox3.Text);
-            double a = double.Parse(textBox4.Text);
+            if(textBox2.Text == string.Empty || textBox3.Text == string.Empty || textBox4.Text == string.Empty)
+            {
+                MessageBox.Show("Ingresa los datos faltantes"); 
+            }
+            else
+            {
+                double b = double.Parse(textBox3.Text);
+                double a = double.Parse(textBox4.Text);
 
-            Carroceria carroc = new Carroceria(textBox2.Text, b, a);
+                Carroceria carroc = new Carroceria(textBox2.Text, b, a);
+                textBox1.Text = carroc.MostrarArea();
+            }
 
-            textBox1.Text = carroc.MostrarArea(); 
+           
         }
     }
 }
