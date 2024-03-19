@@ -8,7 +8,7 @@ namespace Polimorfismo1
 {
     internal class Carro
     {
-        //Atributos
+        //Atributos 
         protected string color { get; set; }
     }
 }
