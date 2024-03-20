@@ -24,6 +24,7 @@ namespace Polimorfismo1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Las dos lineas verticales || indican el operador OR logico y && el operador Y logico
             if(textBox2.Text == string.Empty || textBox3.Text == string.Empty || textBox4.Text == string.Empty)
             {
                 MessageBox.Show("Ingresa los datos faltantes"); 
